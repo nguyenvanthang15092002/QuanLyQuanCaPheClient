@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_client.view.controller.Truong.addProductView">
+   <children>
+      <Button layoutX="322.0" layoutY="347.0" mnemonicParsing="false" onAction="#cancel" text="cancel" />
+      <Button layoutX="132.0" layoutY="347.0" mnemonicParsing="false" onAction="#confirm" text="confirm" />
+      <Label layoutX="110.0" layoutY="105.0" text="Name:" />
+      <TextField fx:id="name" layoutX="209.0" layoutY="97.0" promptText="name" />
+      <Label layoutX="110.0" layoutY="149.0" text="Price:" />
+      <TextField fx:id="price" layoutX="209.0" layoutY="141.0" promptText="price" />
+      <Label layoutX="110.0" layoutY="194.0" text="Discount:" />
+      <TextField fx:id="discount" layoutX="209.0" layoutY="186.0" promptText="discount" />
+      <Label layoutX="110.0" layoutY="234.0" text="Image:" />
+      <TextField fx:id="image" layoutX="209.0" layoutY="226.0" promptText="image" />
+      <Label layoutX="110.0" layoutY="271.0" text="Available:" />
+      <ChoiceBox fx:id="choiceBox" layoutX="208.0" layoutY="264.0" prefWidth="150.0" />
+      <TextField fx:id="id" layoutX="208.0" layoutY="41.0" promptText="id" />
+      <Label layoutX="112.0" layoutY="50.0" text="ID:" />
+      <Label fx:id="nameAlert" layoutX="215.0" layoutY="74.0" textFill="RED" />
+   </children>
+</AnchorPane>

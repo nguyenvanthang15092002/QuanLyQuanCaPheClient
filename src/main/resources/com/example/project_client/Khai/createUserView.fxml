@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_client.view.controller.Khai.CreateUserViewController">
+   <children>
+      <HBox fx:id="returnHbox" prefHeight="55.0" prefWidth="1366.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label fx:id="usernameLb" layoutX="247.0" layoutY="98.0" text="Username" />
+            <TextField fx:id="usernameTf" layoutX="247.0" layoutY="123.0" prefHeight="25.0" prefWidth="206.0" promptText="Username" />
+            <TextField fx:id="passwordTf" layoutX="641.0" layoutY="123.0" prefHeight="25.0" prefWidth="206.0" promptText="Password" />
+            <Label fx:id="passwordLb" layoutX="641.0" layoutY="98.0" text="Password" />
+            <TextField fx:id="staffIdTf" layoutX="247.0" layoutY="283.0" prefHeight="25.0" prefWidth="206.0" promptText="Staff Id" />
+            <Label fx:id="staffIdLb" layoutX="247.0" layoutY="258.0" text="Staff id" />
+            <Button fx:id="createUserBtn" layoutX="435.0" layoutY="514.0" mnemonicParsing="false" onAction="#createUser" prefHeight="55.0" prefWidth="206.0" text="Thêm mới" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_client.view.controller.Truong.productView">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="768.0" prefWidth="1368.0" style="-fx-background-color: eaded6;">
+         <children>
+            <Pane prefHeight="142.0" prefWidth="1366.0" style="-fx-background-color: #ba9073;">
+               <children>
+                  <Button layoutX="962.0" layoutY="26.0" mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: #000000;" text="cancel" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Button>
+                  <Button layoutX="502.0" layoutY="71.0" mnemonicParsing="false" onAction="#changeProduct" style="-fx-background-color: #000000;" text="Change Product" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icon/change.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button layoutX="301.0" layoutY="71.0" mnemonicParsing="false" onAction="#addProduct" style="-fx-background-color: #000000;" text="Add Product" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icon/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button layoutX="743.0" layoutY="71.0" mnemonicParsing="false" onAction="#deleteProduct" style="-fx-background-color: #000000;" text="Delete Product" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icon/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button layoutX="94.0" layoutY="71.0" mnemonicParsing="false" onAction="#readProduct" style="-fx-background-color: #000000;" text=" Information" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icon/info.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </Pane>
+            <ScrollPane layoutX="185.0" layoutY="240.0" prefHeight="466.0" prefWidth="894.0" style="-fx-background-color: eaded6;">
+               <content>
+                  <TableView fx:id="tableView" prefHeight="438.0" prefWidth="878.0" style="-fx-background-color: eaded6;">
+                    <columns>
+                      <TableColumn fx:id="id" prefWidth="57.0" style="-fx-background-color: c0b9bf00;" text="ID" />
+                      <TableColumn fx:id="name" prefWidth="207.0" style="-fx-background-color: c0b9bf00;" text="name" />
+                        <TableColumn fx:id="price" prefWidth="106.0" style="-fx-background-color: c0b9bf00;" text="price" />
+                        <TableColumn fx:id="available" prefWidth="100.0" style="-fx-background-color: c0b9bf00;" text="available" />
+                        <TableColumn fx:id="image" prefWidth="405.0" style="-fx-background-color: c0b9bf00;" text="image" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <TextField fx:id="searchTextField" layoutX="497.0" layoutY="170.0" prefHeight="45.0" prefWidth="223.0" promptText="search" style="-fx-background-color: #f9d388;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Ellipse fill="DODGERBLUE" layoutX="76.0" layoutY="691.0" radiusX="28.0" radiusY="45.0" rotate="-67.4" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: #ac4600;" />
+            <Ellipse fill="DODGERBLUE" layoutX="112.0" layoutY="667.0" radiusX="36.0" radiusY="59.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: #ac573d;" />
+            <Pane layoutX="1198.0" layoutY="-2.0" prefHeight="768.0" prefWidth="292.0" style="-fx-background-color: #ac573d;">
+               <children>
+                  <Circle fill="DODGERBLUE" layoutX="15.0" layoutY="749.0" radius="100.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: #ac573d;" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

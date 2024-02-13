@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="parentRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_client.view.controller.Khai.UserMainViewController">
+   <top>
+      <HBox fx:id="returnHbox" alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="1366.0" />
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <TableView fx:id="userTable" prefHeight="609.0" prefWidth="1003.0">
+              <columns>
+                <TableColumn fx:id="idUserColumn" prefWidth="262.0" text="ID" />
+                <TableColumn fx:id="usernameUserColumn" prefWidth="447.0" text="Tài khoản" />
+                  <TableColumn fx:id="staffIdUserColumn" prefWidth="293.0" text="Mã nhân viên" />
+              </columns>
+            </TableView>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="100.0" right="50.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+   <right>
+      <VBox prefHeight="716.0" prefWidth="213.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addUserBtn" mnemonicParsing="false" prefHeight="39.0" prefWidth="160.0" text="Thêm mới" onAction="#openWdCreateUser"/>
+            <Button fx:id="setUserBtn" mnemonicParsing="false" prefHeight="39.0" prefWidth="160.0" text="Sửa thông tin" onAction="#openWdUpdateUser" />
+            <Button fx:id="deleteUserBtn" mnemonicParsing="false" prefHeight="39.0" prefWidth="160.0" text="Xóa tài khoản" onAction="#deleteUser" />
+         </children>
+         <padding>
+            <Insets left="10.0" top="20.0" />
+         </padding>
+      </VBox>
+   </right>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="77.0" prefWidth="1366.0" spacing="60.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="searchTf" prefHeight="25.0" prefWidth="400.0" promptText="Tìm kiếm tài khoản" />
+            <Button fx:id="searchBtn" mnemonicParsing="false" text="Tìm kiếm" onAction="#searchUser"/>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

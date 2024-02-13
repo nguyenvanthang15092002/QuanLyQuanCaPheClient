@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_client.view.controller.Truong.productView">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Pane prefHeight="80.0" prefWidth="800.0">
+               <children>
+                  <Button layoutX="700.0" layoutY="15.0" mnemonicParsing="false" onAction="#cancel" text="cancel" />
+                  <Button layoutX="380.0" layoutY="38.0" mnemonicParsing="false" onAction="#changeProduct" text="Change Product" />
+                  <Button layoutX="211.0" layoutY="38.0" mnemonicParsing="false" onAction="#addProduct" text="Add Product" />
+                  <Button layoutX="550.0" layoutY="38.0" mnemonicParsing="false" onAction="#deleteProduct" text="Delete Product" />
+                  <Button layoutX="50.0" layoutY="38.0" mnemonicParsing="false" onAction="#readProduct" text="Information" />
+               </children>
+            </Pane>
+            <ScrollPane layoutX="169.0" layoutY="164.0" prefHeight="276.0" prefWidth="456.0">
+               <content>
+                  <TableView fx:id="tableView" prefHeight="270.0" prefWidth="452.0">
+                    <columns>
+                      <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="name" prefWidth="75.0" text="name" />
+                        <TableColumn fx:id="price" prefWidth="75.0" text="price" />
+                        <TableColumn fx:id="available" prefWidth="75.0" text="available" />
+                        <TableColumn fx:id="discount" prefWidth="75.0" text="discount" />
+                        <TableColumn fx:id="image" prefWidth="75.0" text="image" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

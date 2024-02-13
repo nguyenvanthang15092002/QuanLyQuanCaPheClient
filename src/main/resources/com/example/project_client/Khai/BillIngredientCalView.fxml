@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_client.view.controller.Khai.BillIngredientCalViewController">
+    <children>
+        <HBox fx:id="returnHbox" prefHeight="26.0" prefWidth="1366.0" />
+        <HBox fx:id="inputHbox" alignment="CENTER_LEFT" prefHeight="89.0" prefWidth="1366.0" spacing="120.0">
+            <children>
+                <VBox prefHeight="89.0" prefWidth="240.0">
+                    <children>
+                        <Label fx:id="dateStartLabel" prefHeight="39.0" prefWidth="266.0" text="Ngày bắt đầu" />
+                        <DatePicker fx:id="datePickStart" focusTraversable="false" prefHeight="50.0" prefWidth="266.0" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="89.0" prefWidth="240.0">
+                    <children>
+                        <Label fx:id="dateEndLabel" prefHeight="39.0" prefWidth="266.0" text="Ngày kết thúc" />
+                        <DatePicker fx:id="datePickEnd" focusTraversable="false" prefHeight="50.0" prefWidth="266.0" />
+                    </children>
+                </VBox>
+                <VBox fx:id="parentTotalVbox" prefHeight="89.0" prefWidth="208.0" visible="false">
+                    <children>
+                        <Label fx:id="sumBillIngLabel" prefHeight="41.0" prefWidth="266.0" text="Tổng tiền nguyên liệu:" />
+                        <Label fx:id="totalBillIngredientLabel" prefHeight="47.0" prefWidth="266.0" text="Label" />
+                    </children>
+                </VBox>
+            </children>
+            <padding>
+                <Insets left="120.0" />
+            </padding>
+        </HBox>
+        <HBox prefHeight="0.0" prefWidth="1366.0" VBox.vgrow="ALWAYS">
+            <children>
+                <TableView fx:id="tableIngredient" prefHeight="200.0" prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="nameIngeredientColumn" prefWidth="325.0" text="Tên nguyên liệu" />
+                        <TableColumn fx:id="countIngeredientColumn" prefWidth="374.0" text="Số lượng" />
+                        <TableColumn fx:id="unitIngeredientColumn" prefWidth="266.0" text="Đơn vị" />
+                        <TableColumn fx:id="totalIngeredientColumn" prefWidth="300.0" text="Tổng tiền" />
+                    </columns>
+                </TableView>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+            </padding>
+        </HBox>
+    </children>
+</VBox>

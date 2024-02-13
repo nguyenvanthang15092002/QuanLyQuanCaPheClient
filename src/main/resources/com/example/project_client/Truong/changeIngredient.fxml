@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: eaded6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_client.view.controller.Truong.changeIngredientView">
+   <children>
+      <Button layoutX="770.0" layoutY="630.0" mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: #000000;" text="cancel" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="532.0" layoutY="630.0" mnemonicParsing="false" onAction="#confirm" style="-fx-background-color: #000000;" text="confirm" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Label layoutX="394.0" layoutY="495.0" text="Unit:">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <TextField fx:id="unit" layoutX="557.0" layoutY="491.0" style="-fx-background-color: #000000;">
+         <font>
+            <Font size="25.0" />
+         </font></TextField>
+      <Label layoutX="394.0" layoutY="381.0" text="Unit price:">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <TextField fx:id="unitPrice" layoutX="557.0" layoutY="377.0" style="-fx-background-color: #000000;">
+         <font>
+            <Font size="25.0" />
+         </font></TextField>
+      <Label layoutX="394.0" layoutY="258.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <TextField fx:id="name" layoutX="557.0" layoutY="254.0" style="-fx-background-color: #000000;">
+         <font>
+            <Font size="25.0" />
+         </font></TextField>
+      <Label layoutX="394.0" layoutY="145.0" text="ID:">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Label fx:id="id" layoutX="561.0" layoutY="145.0" text="id">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameAlert" layoutX="560.0" layoutY="214.0" text="Input name" textFill="RED">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="unitPriceAlert" layoutX="560.0" layoutY="340.0" text="Input unit price" textFill="RED">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="unitAlert" layoutX="560.0" layoutY="453.0" text="Input unit" textFill="RED">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="465.0" layoutY="42.0" text="Change ingredient" textFill="#ff7657">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <Pane layoutX="1077.0" prefHeight="768.0" prefWidth="300.0" style="-fx-background-color: #e38e6f;">
+         <children>
+            <ImageView fitHeight="406.0" fitWidth="249.0" layoutX="23.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/addIngredient.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="381.0" fitWidth="249.0" layoutX="21.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/product.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

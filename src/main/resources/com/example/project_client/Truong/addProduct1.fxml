@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: eaded6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_client.view.controller.Truong.addProductView">
+   <children>
+      <Label layoutX="311.0" layoutY="169.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <TextField fx:id="name" layoutX="595.0" layoutY="164.0" promptText="name" style="-fx-background-color: #000000;">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
+      <Label layoutX="311.0" layoutY="297.0" text="Price:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <TextField fx:id="price" layoutX="595.0" layoutY="293.0" promptText="price" style="-fx-background-color: #000000;">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
+      <Label layoutX="311.0" layoutY="433.0" text="Image:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label layoutX="311.0" layoutY="560.0" text="Available:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <ChoiceBox fx:id="choiceBox" layoutX="595.0" layoutY="548.0" prefHeight="44.0" prefWidth="177.0" style="-fx-background-color: #ffffff; -fx-text-fill: #123456;">
+         <effect>
+            <ColorAdjust />
+         </effect></ChoiceBox>
+      <Button layoutX="377.0" layoutY="661.0" mnemonicParsing="false" onAction="#confirm" style="-fx-background-color: #000000; -fx-border-width: 20;" text="confirm" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="627.0" layoutY="661.0" mnemonicParsing="false" onAction="#cancel" prefHeight="39.0" prefWidth="91.0" style="-fx-background-color: #000000;" text="cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Label fx:id="nameAlert" layoutX="604.0" layoutY="133.0" text="input name" textFill="RED">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceAlert" layoutX="603.0" layoutY="263.0" text="input price" textFill="RED">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="imageAlert" layoutX="603.0" layoutY="402.0" text="input image" textFill="RED">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="image" layoutX="596.0" layoutY="433.0" mnemonicParsing="false" onAction="#chooseImage" style="-fx-background-color: #000000;" text="choose Image" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Pane layoutX="1073.0" prefHeight="768.0" prefWidth="304.0" style="-fx-background-color: #e38e6f;">
+         <children>
+            <ImageView fitHeight="252.0" fitWidth="370.0" layoutX="-35.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@image/product2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="306.0" fitWidth="252.0" layoutX="29.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/product1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="424.0" layoutY="27.0" text="Add product" textFill="#ff7657">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
